@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function printRange(s,f,i) {
+                if(f==null){
+                    f = s;
+                    s = 0;
+                    for(var x = s; x < f; x+=i){
+                        if(i==null){
+                            i = 1;
+                        }
+                        // if(f==null){
+                        //     f = s;
+                        //     s = 0;
+                        // }
+                        // I needed to put this if before for statement because f was undefined and wouldn't do first loop.
+                        console.log(x);
+                    }
+                }
+            }
+
+
+                // for(var x = 2; x < 10; x=x+2){
+                //     console.log(x);
+                // }
+
+
+            printRange(4);
+            
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
